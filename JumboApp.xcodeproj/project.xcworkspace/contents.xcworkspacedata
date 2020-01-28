@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/nicholasreeder/Documents/ios/JumboApp/Test.json"
+      assignedFileDataType = "public.json">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/nicholasreeder/Documents/ios/JumboApp/JumboApp/FileDownloader.swift">
+   </FileRef>
+   <FileRef
       location = "self:JumboApp.xcodeproj">
    </FileRef>
 </Workspace>

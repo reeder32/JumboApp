@@ -1,24 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Progress View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProgressViewController" customModule="JumboApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CUG-sS-m0Q">
+                                <rect key="frame" x="0.0" y="86" width="414" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="129" id="Bq6-Tq-XHu" customClass="ProgressTableViewCell" customModule="JumboApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="129"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bq6-Tq-XHu" id="vsG-uO-i5j">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="EoM-x4-bW1">
+                                                    <rect key="frame" x="188.5" y="46" width="37" height="37"/>
+                                                    <color key="color" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </activityIndicatorView>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="6OA-y0-2Pm">
+                                                    <rect key="frame" x="52" y="89.5" width="310.5" height="2"/>
+                                                    <color key="progressTintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </progressView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All done!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="STL-GZ-wcf">
+                                                    <rect key="frame" x="160" y="12" width="94.5" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EoM-x4-bW1" firstAttribute="centerX" secondItem="vsG-uO-i5j" secondAttribute="centerX" id="CAh-MU-aXT"/>
+                                                <constraint firstItem="EoM-x4-bW1" firstAttribute="centerY" secondItem="vsG-uO-i5j" secondAttribute="centerY" id="Exw-4q-DXp"/>
+                                                <constraint firstItem="EoM-x4-bW1" firstAttribute="top" secondItem="vsG-uO-i5j" secondAttribute="top" constant="46" id="HJm-r0-SmY"/>
+                                                <constraint firstItem="6OA-y0-2Pm" firstAttribute="top" secondItem="EoM-x4-bW1" secondAttribute="bottom" constant="6.5" id="NYn-We-hqm"/>
+                                                <constraint firstItem="STL-GZ-wcf" firstAttribute="top" secondItem="vsG-uO-i5j" secondAttribute="top" constant="12" id="ViA-6d-Tlm"/>
+                                                <constraint firstItem="6OA-y0-2Pm" firstAttribute="width" secondItem="vsG-uO-i5j" secondAttribute="width" multiplier="0.75" id="c2n-Vh-eVP"/>
+                                                <constraint firstAttribute="bottom" secondItem="6OA-y0-2Pm" secondAttribute="bottom" constant="37.5" id="faY-hD-5JO"/>
+                                                <constraint firstItem="6OA-y0-2Pm" firstAttribute="centerX" secondItem="EoM-x4-bW1" secondAttribute="centerX" id="pzQ-yj-sSI"/>
+                                                <constraint firstItem="STL-GZ-wcf" firstAttribute="centerX" secondItem="vsG-uO-i5j" secondAttribute="centerX" id="voy-xS-Qty"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activityIndicator" destination="EoM-x4-bW1" id="9aF-Ue-diq"/>
+                                            <outlet property="messageLabel" destination="STL-GZ-wcf" id="Tdd-4j-qfG"/>
+                                            <outlet property="progressBar" destination="6OA-y0-2Pm" id="1uS-Bv-w0N"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Me4-ej-ES1"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Qp5-fV-lbY"/>
+                                </connections>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRy-H7-kIA">
+                                <rect key="frame" x="0.0" y="825" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8cX-uQ-Zaq"/>
+                                    <barButtonItem title="Test" id="j0g-ti-pOV">
+                                        <connections>
+                                            <action selector="testTapped:" destination="BYZ-38-t0r" id="iq6-rM-gOU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4N3-cy-o4C"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HRy-H7-kIA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5SF-Zb-pvU"/>
+                            <constraint firstItem="HRy-H7-kIA" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="Pc4-L1-ANv"/>
+                            <constraint firstItem="HRy-H7-kIA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="12" id="Xoq-rz-qLC"/>
+                            <constraint firstItem="CUG-sS-m0Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cqz-vB-XXt"/>
+                            <constraint firstItem="HRy-H7-kIA" firstAttribute="top" secondItem="CUG-sS-m0Q" secondAttribute="bottom" constant="5" id="kRz-U6-6M5"/>
+                            <constraint firstItem="CUG-sS-m0Q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="mLP-Ld-JtW"/>
+                            <constraint firstItem="CUG-sS-m0Q" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yh7-AU-41W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="CUG-sS-m0Q" id="IY3-B5-Gkx"/>
+                        <outlet property="testButton" destination="j0g-ti-pOV" id="ltc-2r-c4U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </scene>
     </scenes>
 </document>

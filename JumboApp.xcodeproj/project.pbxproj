@@ -8,22 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		8384482623D8F86E000930A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384482523D8F86E000930A6 /* AppDelegate.swift */; };
-		8384482823D8F86E000930A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384482723D8F86E000930A6 /* SceneDelegate.swift */; };
-		8384482A23D8F86E000930A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384482923D8F86E000930A6 /* ViewController.swift */; };
+		8384482A23D8F86E000930A6 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384482923D8F86E000930A6 /* ProgressViewController.swift */; };
 		8384482D23D8F86E000930A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8384482B23D8F86E000930A6 /* Main.storyboard */; };
 		8384482F23D8F870000930A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8384482E23D8F870000930A6 /* Assets.xcassets */; };
 		8384483223D8F870000930A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8384483023D8F870000930A6 /* LaunchScreen.storyboard */; };
+		8384484023D90B1B000930A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384483F23D90B1B000930A6 /* SceneDelegate.swift */; };
+		8384484423D9228C000930A6 /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384484323D9228C000930A6 /* ProgressTableViewCell.swift */; };
+		8384484E23D97BBF000930A6 /* JavaScriptEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384484D23D97BBF000930A6 /* JavaScriptEvaluator.swift */; };
+		8384486023DA13C3000930A6 /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 8384485F23DA13C3000930A6 /* Test.json */; };
+		83F36C8323DD2F1C00635621 /* interview_bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 83F36C8223DD2F1C00635621 /* interview_bundle.js */; };
+		83F36C8723DF975D00635621 /* sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 83F36C8623DF975D00635621 /* sample.html */; };
+		83F36C8923DFC00900635621 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F36C8823DFC00900635621 /* Notifications.swift */; };
+		83F36C8B23DFD73D00635621 /* JumboStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F36C8A23DFD73D00635621 /* JumboStructs.swift */; };
+		83F36C8D23DFD79600635621 /* JumboErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F36C8C23DFD79600635621 /* JumboErrors.swift */; };
+		83F36C9223E0022900635621 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F36C9123E0022900635621 /* DownloadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8384482223D8F86E000930A6 /* JumboApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumboApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8384482523D8F86E000930A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8384482723D8F86E000930A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8384482923D8F86E000930A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8384482923D8F86E000930A6 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		8384482C23D8F86E000930A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8384482E23D8F870000930A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8384483123D8F870000930A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8384483323D8F870000930A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8384483F23D90B1B000930A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8384484323D9228C000930A6 /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
+		8384484D23D97BBF000930A6 /* JavaScriptEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JavaScriptEvaluator.swift; sourceTree = "<group>"; };
+		8384485F23DA13C3000930A6 /* Test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
+		83F36C8223DD2F1C00635621 /* interview_bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = interview_bundle.js; sourceTree = "<group>"; };
+		83F36C8623DF975D00635621 /* sample.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = sample.html; sourceTree = "<group>"; };
+		83F36C8823DFC00900635621 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		83F36C8A23DFD73D00635621 /* JumboStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumboStructs.swift; sourceTree = "<group>"; };
+		83F36C8C23DFD79600635621 /* JumboErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumboErrors.swift; sourceTree = "<group>"; };
+		83F36C9123E0022900635621 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,48 @@
 		8384482423D8F86E000930A6 /* JumboApp */ = {
 			isa = PBXGroup;
 			children = (
+				83F36C8F23DFD88E00635621 /* Work */,
+				83F36C8E23DFD87300635621 /* UI */,
+				83F36C9023DFD8C000635621 /* Test */,
 				8384482523D8F86E000930A6 /* AppDelegate.swift */,
-				8384482723D8F86E000930A6 /* SceneDelegate.swift */,
-				8384482923D8F86E000930A6 /* ViewController.swift */,
 				8384482B23D8F86E000930A6 /* Main.storyboard */,
 				8384482E23D8F870000930A6 /* Assets.xcassets */,
 				8384483023D8F870000930A6 /* LaunchScreen.storyboard */,
 				8384483323D8F870000930A6 /* Info.plist */,
 			);
 			path = JumboApp;
+			sourceTree = "<group>";
+		};
+		83F36C8E23DFD87300635621 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8384483F23D90B1B000930A6 /* SceneDelegate.swift */,
+				8384482923D8F86E000930A6 /* ProgressViewController.swift */,
+				8384484323D9228C000930A6 /* ProgressTableViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		83F36C8F23DFD88E00635621 /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				8384484D23D97BBF000930A6 /* JavaScriptEvaluator.swift */,
+				83F36C8A23DFD73D00635621 /* JumboStructs.swift */,
+				83F36C8C23DFD79600635621 /* JumboErrors.swift */,
+				83F36C8823DFC00900635621 /* Notifications.swift */,
+				83F36C9123E0022900635621 /* DownloadManager.swift */,
+			);
+			path = Work;
+			sourceTree = "<group>";
+		};
+		83F36C9023DFD8C000635621 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				8384485F23DA13C3000930A6 /* Test.json */,
+				83F36C8223DD2F1C00635621 /* interview_bundle.js */,
+				83F36C8623DF975D00635621 /* sample.html */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +176,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F36C8723DF975D00635621 /* sample.html in Resources */,
 				8384483223D8F870000930A6 /* LaunchScreen.storyboard in Resources */,
+				83F36C8323DD2F1C00635621 /* interview_bundle.js in Resources */,
 				8384482F23D8F870000930A6 /* Assets.xcassets in Resources */,
 				8384482D23D8F86E000930A6 /* Main.storyboard in Resources */,
+				8384486023DA13C3000930A6 /* Test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8384482A23D8F86E000930A6 /* ViewController.swift in Sources */,
+				83F36C8923DFC00900635621 /* Notifications.swift in Sources */,
+				8384484E23D97BBF000930A6 /* JavaScriptEvaluator.swift in Sources */,
+				8384482A23D8F86E000930A6 /* ProgressViewController.swift in Sources */,
 				8384482623D8F86E000930A6 /* AppDelegate.swift in Sources */,
-				8384482823D8F86E000930A6 /* SceneDelegate.swift in Sources */,
+				8384484423D9228C000930A6 /* ProgressTableViewCell.swift in Sources */,
+				83F36C8B23DFD73D00635621 /* JumboStructs.swift in Sources */,
+				83F36C8D23DFD79600635621 /* JumboErrors.swift in Sources */,
+				83F36C9223E0022900635621 /* DownloadManager.swift in Sources */,
+				8384484023D90B1B000930A6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
